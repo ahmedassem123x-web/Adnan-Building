@@ -6,6 +6,7 @@
 <title>شركة عدنان للبناء | مقاولات وحلول رقمية – مسقط، سلطنة عُمان</title>
 <meta name="description" content="شركة عدنان للبناء ش.ش.و: مقاولات البناء والتشييد للمباني السكنية وغير السكنية، وتطوير ودعم المواقع والحسابات الإلكترونية. مسقط – سلطنة عُمان.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
 <style>
 :root{--bg:#f4f5f6;--surface:#fff;--ink:#10263a;--muted:#55646f;--line:#d9dee2;--brand:#10263a;--brand-ink:#fff;--accent:#b9822a;--accent-ink:#fff;--hero-bg:#10263a;--hero-ink:#fff;--hero-muted:#b6c3cd;--grid:rgba(255,255,255,.07);
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -80,6 +81,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 section{padding:56px 0}
 .card{padding:26px}
 }
+/* ===== Motion (additive only — colors/fonts/shapes untouched) ===== */
+.hl,.rv{opacity:0}
+.hl{transform:translateY(26px);animation:riseIn .9s cubic-bezier(.16,1,.3,1) forwards;animation-delay:var(--d,0s)}
+@keyframes riseIn{to{opacity:1;transform:none}}
+.hero svg .bld{transform:translateY(14px);opacity:0;animation:riseIn .8s cubic-bezier(.16,1,.3,1) forwards;animation-delay:var(--d,0s)}
+.rv{transform:translateY(28px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.hl,.rv,.hero svg .bld{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -96,35 +105,35 @@ section{padding:56px 0}
 <div class="hero">
 <div class="wrap">
 <div>
-<h1>نبني المباني، ونبني حضوركم الرقمي.</h1>
-<p>مقاولات بناء وتشييد للمباني السكنية وغير السكنية في سلطنة عُمان، إضافة إلى تطوير ودعم المواقع والحسابات الإلكترونية للشركات.</p>
-<div class="cta"><a class="btn" href="#contact">ابدأ مشروعك</a><a class="btn ghost" href="#services">تعرّف على خدماتنا</a></div>
+<h1 class="hl" style="--d:.05s">نبني المباني، ونبني حضوركم الرقمي.</h1>
+<p class="hl" style="--d:.18s">مقاولات بناء وتشييد للمباني السكنية وغير السكنية في سلطنة عُمان، إضافة إلى تطوير ودعم المواقع والحسابات الإلكترونية للشركات.</p>
+<div class="cta hl" style="--d:.30s"><a class="btn" href="#contact">ابدأ مشروعك</a><a class="btn ghost" href="#services">تعرّف على خدماتنا</a></div>
 </div>
 <svg viewBox="0 0 400 320" role="img" aria-label="مخطط هندسي لمبنى" fill="none" stroke="currentColor" stroke-width="1.5">
-<g stroke="#b6c3cd" opacity=".55"><path d="M20 290h360"/><path d="M60 290V120h120v170M180 290V60h110v230M290 290V150h60v140"/><path d="M80 150h80M80 190h80M80 230h80M200 100h70M200 140h70M200 180h70M200 220h70"/></g>
-<g stroke="#d9a043" stroke-width="2"><path d="M60 120l60-40 60 40M180 60l55-30 55 30"/><path d="M20 306h360M60 296v20M180 296v20M290 296v20M350 296v20" stroke-dasharray="4 4" opacity=".7"/></g>
+<g class="bld" style="--d:.3s" stroke="#b6c3cd" opacity=".55"><path d="M20 290h360"/><path d="M60 290V120h120v170M180 290V60h110v230M290 290V150h60v140"/><path d="M80 150h80M80 190h80M80 230h80M200 100h70M200 140h70M200 180h70M200 220h70"/></g>
+<g class="bld" style="--d:.8s" stroke="#d9a043" stroke-width="2"><path d="M60 120l60-40 60 40M180 60l55-30 55 30"/><path d="M20 306h360M60 296v20M180 296v20M290 296v20M350 296v20" stroke-dasharray="4 4" opacity=".7"/></g>
 </svg>
 </div>
 </div>
 
 <div class="facts"><div class="wrap">
-<div><small>الشكل القانوني</small><strong>شركة الشخص الواحد</strong></div>
-<div><small>تأسست</small><strong>سبتمبر 2023</strong></div>
-<div><small>المقر</small><strong>الخوض، السيب – مسقط</strong></div>
-<div><small>السجل التجاري</small><strong>1506977</strong></div>
+<div class="rv"><small>الشكل القانوني</small><strong>شركة الشخص الواحد</strong></div>
+<div class="rv" style="--d:.08s"><small>تأسست</small><strong>سبتمبر 2023</strong></div>
+<div class="rv" style="--d:.16s"><small>المقر</small><strong>الخوض، السيب – مسقط</strong></div>
+<div class="rv" style="--d:.24s"><small>السجل التجاري</small><strong>1506977</strong></div>
 </div></div>
 
 <section id="services">
 <div class="wrap">
-<h2>خدماتنا</h2>
-<p class="lead">نشاطان متكاملان تحت سقف واحد: تنفيذ هندسي على الأرض، وحلول رقمية تُبقي عملك ظاهرًا ومنظّمًا.</p>
+<h2 class="rv">خدماتنا</h2>
+<p class="lead rv" style="--d:.08s">نشاطان متكاملان تحت سقف واحد: تنفيذ هندسي على الأرض، وحلول رقمية تُبقي عملك ظاهرًا ومنظّمًا.</p>
 <div class="split">
-<article class="card dark">
+<article class="card dark rv" style="--d:.15s">
 <h3>مقاولات البناء والتشييد</h3>
 <p>إنشاءات عامة للمباني السكنية وغير السكنية، من الأساسات حتى التسليم.</p>
 <ul><li>بناء المباني السكنية: فلل وعمارات</li><li>بناء المباني التجارية والإدارية</li><li>تنفيذ الهياكل والتشطيبات</li><li>متابعة المشروع وتسليمه</li></ul>
 </article>
-<article class="card">
+<article class="card rv" style="--d:.25s">
 <h3>الحلول الرقمية</h3>
 <p>تطوير ودعم المواقع والحسابات الإلكترونية للشركات والأفراد.</p>
 <ul><li>تصميم وتطوير المواقع الإلكترونية</li><li>إعداد وإدارة الحسابات الإلكترونية</li><li>الدعم الفني والصيانة المستمرة</li></ul>
@@ -136,30 +145,30 @@ section{padding:56px 0}
 <section id="about" class="about">
 <div class="wrap">
 <div>
-<h2>عن الشركة</h2>
-<p>شركة عدنان للبناء شركة شخص واحد مسجّلة في سلطنة عُمان منذ عام 2023، ومقرها منطقة الخوض في ولاية السيب بمحافظة مسقط، ولها فرع ميداني في العامرات.</p>
-<p>نعمل بترخيص رسمي في مقاولات البناء والتشييد، ونوسّع خدماتنا لتشمل الجانب الرقمي لعملائنا.</p>
+<h2 class="rv">عن الشركة</h2>
+<p class="rv" style="--d:.08s">شركة عدنان للبناء شركة شخص واحد مسجّلة في سلطنة عُمان منذ عام 2023، ومقرها منطقة الخوض في ولاية السيب بمحافظة مسقط، ولها فرع ميداني في العامرات.</p>
+<p class="rv" style="--d:.16s">نعمل بترخيص رسمي في مقاولات البناء والتشييد، ونوسّع خدماتنا لتشمل الجانب الرقمي لعملائنا.</p>
 </div>
 <div class="vals">
-<div><b>ترخيص ساري</b><span>سجل تجاري نشط حتى سبتمبر 2029.</span></div>
-<div><b>حضور في مسقط</b><span>مقر في السيب وفرع نشاط في العامرات.</span></div>
-<div><b>تواصل مباشر</b><span>تتعامل مباشرة مع صاحب الشركة دون وسطاء.</span></div>
+<div class="rv" style="--d:.1s"><b>ترخيص ساري</b><span>سجل تجاري نشط حتى سبتمبر 2029.</span></div>
+<div class="rv" style="--d:.2s"><b>حضور في مسقط</b><span>مقر في السيب وفرع نشاط في العامرات.</span></div>
+<div class="rv" style="--d:.3s"><b>تواصل مباشر</b><span>تتعامل مباشرة مع صاحب الشركة دون وسطاء.</span></div>
 </div>
 </div>
 </section>
 
 <section id="contact" class="contact">
 <div class="wrap">
-<h2>تواصل معنا</h2>
-<p class="lead">أرسل لنا تفاصيل مشروعك وسنعود إليك بأقرب وقت.</p>
+<h2 class="rv">تواصل معنا</h2>
+<p class="lead rv" style="--d:.08s">أرسل لنا تفاصيل مشروعك وسنعود إليك بأقرب وقت.</p>
 <div class="grid">
-<dl class="info card">
+<dl class="info card rv" style="--d:.15s">
 <div><dt>الهاتف / واتساب</dt><dd><a href="tel:+96879487544" dir="ltr">+968 7948 7544</a></dd></div>
 <div><dt>البريد الإلكتروني</dt><dd><a href="mailto:bieabz@yahoo.fr">bieabz@yahoo.fr</a></dd></div>
 <div><dt>العنوان</dt><dd>الخوض، السيب – محافظة مسقط، سلطنة عُمان</dd></div>
 <div><dt>صندوق البريد</dt><dd>ص.ب 60، الرمز البريدي 132</dd></div>
 </dl>
-<form class="card" id="f">
+<form class="card rv" id="f" style="--d:.25s">
 <label>الاسم<input name="n" required autocomplete="name"></label>
 <label>رقم الهاتف<input name="p" type="tel" dir="ltr" autocomplete="tel"></label>
 <label>تفاصيل الطلب<textarea name="m" rows="4" required></textarea></label>
@@ -178,6 +187,24 @@ e.preventDefault();var d=new FormData(this);
 var b='الاسم: '+d.get('n')+'\nالهاتف: '+d.get('p')+'\n\n'+d.get('m');
 location.href='mailto:bieabz@yahoo.fr?subject='+encodeURIComponent('طلب جديد من الموقع')+'&body='+encodeURIComponent(b);
 });
+</script>
+<script>
+(function(){
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)||reduce){els.forEach(function(e){e.classList.add('in')});}
+else{var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
+var svg=document.querySelector('.hero svg');
+if(!svg||reduce)return;
+var paths=svg.querySelectorAll('path'),t0=400;
+paths.forEach(function(p,i){
+var len=0;try{len=p.getTotalLength()}catch(e){}
+if(!len)return;
+p.style.strokeDasharray=len;p.style.strokeDashoffset=len;p.getBoundingClientRect();
+p.style.transition='stroke-dashoffset 1s cubic-bezier(.16,1,.3,1) '+(t0+i*110)+'ms';
+requestAnimationFrame(function(){p.style.strokeDashoffset='0'});
+});
+})();
 </script>
 </body>
 </html>
